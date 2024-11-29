@@ -1,0 +1,13 @@
+{
+  "moduleFileExtensions": ["js", "json", "ts"],
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "testRegex": ".e2e-spec.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "moduleNameMapper": {
+    "^@/apps/payment-processor/(.*)$": "<rootDir>/apps/payment-processor/src/$1",
+    "^@/apps/find-one-payment-by-id/(.*)$": "<rootDir>/apps/find-one-payment-by-id/src/$1"
+  }
+}

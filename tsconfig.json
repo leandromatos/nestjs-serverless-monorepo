@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "NodeNext",
+    "lib": ["ESNext"],
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "paths": {
+      "@/apps/payment-processor/*": [
+        "apps/payment-processor/src/*"
+      ],
+      "@/apps/find-one-payment-by-id/*": [
+        "apps/find-one-payment-by-id/src/*"
+      ],
+      "@/libs/logger": [
+        "libs/logger/src"
+      ],
+      "@/libs/logger/*": [
+        "libs/logger/src/*"
+      ],
+      "@/tests/*": [
+        "tests/*"
+      ]
+    },
+    "moduleResolution": "NodeNext",
+    "moduleDetection": "force",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "strictPropertyInitialization": false
+  },
+  "include": [
+    "apps/**/*.ts",
+    "libs/**/*.ts",
+    "tests/**/*.ts"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "Records": [
+    {
+      "messageId": "18365216-7f2a-4ecf-8bd7-f66b7f95c047",
+      "receiptHandle": "AQEBoLg+0vFTAes+2ibawoLW5aXXX9r82VHuYmPzLAtlStEcdV3JJrKJz+pQcB6ZlpKYQYO6/Yl3CwR5k9Vu9z7EN/igog1rNrCZQmHjvg4LTDtxpjZxLrouE+G5ARpjhxzhkviGQSp76R4XkRlxpKkZXfp6s4WvdbYCh8I6YMG6ectCBzF3cA5yc0eMnXR7cIFUc6MeKUfaYxauIiUhQ6ghNjjW0HMqmey9XRVGIMmAbD94szOiNIOtA8oUCLaMknKX80L/5XdnnYhQad9AjGPoLh4mXx0WhoKtH7ssLyJUKntQ+90tOnKqJHQN1LqpgahaSwAHQg0GfszkX7Ww7mc6O7Rn2W3cUJCIt+uiyZqjWhhEysUVuJUTCAJvE3Yfe1MpbdgSUuhoLfLsBn5dNu9Db+/i90qdbLWgJ9MTjlxL22k=",
+      "body": "{ \"paymentId\": \"1234567890\", \"amount\": 350.00, \"currency\": \"USD\", \"status\": \"received\", \"action\": \"success\" }",
+      "attributes": {
+        "ApproximateReceiveCount": "1",
+        "SentTimestamp": "1727128041201",
+        "SenderId": "AROA453SOPGCDG3RQFCLS:1727128041156293905",
+        "ApproximateFirstReceiveTimestamp": "1727128041204"
+      },
+      "messageAttributes": {},
+      "md5OfBody": "208d1ad195c576505950dc5cc672b2c3",
+      "eventSource": "aws:sqs",
+      "eventSourceARN": "arn:aws:sqs:us-east-1:000000000000:payments-main-queue",
+      "awsRegion": "us-east-1"
+    }
+  ]
+}

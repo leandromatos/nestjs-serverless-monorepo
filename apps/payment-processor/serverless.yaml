@@ -1,0 +1,42 @@
+service: payment-processor
+
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+  environment:
+    AWS_NODEJS_CONNECTION_REUSE_ENABLED: "1"
+
+functions:
+  payment-processor:
+    handler: ../../dist/apps/payment-processor/main.handler
+    events:
+      - sqs:
+          arn:
+            Fn::GetAtt:
+              - PaymentMainQueue
+              - Arn
+          batchSize: 10
+          functionResponseType: 'ReportBatchItemFailures'
+
+plugins:
+  - serverless-offline-sqs
+  - serverless-offline
+  - serverless-dotenv-plugin
+
+custom:
+  serverless-offline-sqs:
+    autoCreate: true
+    endpoint: http://localhost:9324
+  serverless-offline:
+    httpPort: 3000
+    websocketPort: 3001
+    lambdaPort: 3002
+    albPort: 3003
+
+resources:
+  Resources:
+    PaymentMainQueue:
+      Type: AWS::SQS::Queue
+      Properties:
+        QueueName: payments-main-queue

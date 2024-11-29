@@ -1,0 +1,6 @@
+{
+  "extends": "./tsconfig.json",
+  "module": "commonjs",
+  "target": "ES2021",
+  "exclude": ["node_modules", "dist", "**/*spec.ts"]
+}

@@ -1,0 +1,5 @@
+services:
+  find-one-payment-by-id:
+    path: apps/find-one-payment-by-id
+  payment-processor:
+    path: apps/payment-processor

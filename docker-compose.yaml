@@ -1,0 +1,11 @@
+name: payment_service
+services:
+  elasticmq:
+    image: softwaremill/elasticmq
+    container_name: payment_service_elasticmq
+    ports:
+      - "9324:9324"
+    environment:
+      - JAVA_OPTS=-Dconfig.file=/opt/elasticmq.conf
+    volumes:
+      - ./elasticmq/elasticmq.conf:/opt/elasticmq.conf

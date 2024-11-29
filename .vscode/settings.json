@@ -1,0 +1,31 @@
+{
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "eslint.validate": ["javascript", "typescript"],
+  "files.associations": {
+    "commit-msg": "shellscript",
+    "pre-commit": "shellscript",
+    ".env": "properties",
+    ".env.example": "properties",
+    ".env.test": "properties",
+    ".env.production": "properties",
+    ".env.staging": "properties"
+  },
+  "files.exclude": {
+    ".aws-sam": true,
+  },
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "git.ignoreSubmodules": false,
+  "search.useIgnoreFiles": true,
+  "search.useParentIgnoreFiles": false,
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.preferences.quoteStyle": "single",
+  "yaml.schemas": {
+    "https://json.schemastore.org/github-workflow.json": ".github/workflows/*.yaml"
+  }
+}

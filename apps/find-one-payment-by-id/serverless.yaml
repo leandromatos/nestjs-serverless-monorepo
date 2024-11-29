@@ -1,0 +1,27 @@
+service: find-one-payment-by-id
+
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+  environment:
+    AWS_NODEJS_CONNECTION_REUSE_ENABLED: "1"
+
+functions:
+  find-one-payment-by-id:
+    handler: ../../dist/apps/find-one-payment-by-id/main.handler
+    events:
+      - http:
+          method: GET
+          path: /payments/{id}
+
+plugins:
+  - serverless-offline
+  - serverless-dotenv-plugin
+
+custom:
+  serverless-offline:
+    httpPort: 4000
+    websocketPort: 4001
+    lambdaPort: 4002
+    albPort: 4003

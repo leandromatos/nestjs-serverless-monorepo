@@ -1,0 +1,19 @@
+{
+  "resource": "/payments/{id}",
+  "path": "/payments/12345",
+  "httpMethod": "GET",
+  "headers": {
+    "Accept": "application/json",
+    "Content-Type": "application/json"
+  },
+  "queryStringParameters": null,
+  "pathParameters": {
+    "id": "12345"
+  },
+  "requestContext": {
+    "resourcePath": "/payments/{id}",
+    "httpMethod": "GET"
+  },
+  "body": null,
+  "isBase64Encoded": false
+}
